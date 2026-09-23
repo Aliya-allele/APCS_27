@@ -12,7 +12,7 @@ class starter {
 		System.out.println("Welcome to the Fortune Cookie Generator!");
 		System.out.println();
 		System.out.print("Password: ");
-		int number=(int)(Math.random()*11);
+		int number=(int)(Math.random()*10);
 		System.out.println(number);
 		if (number==0){
 			System.out.println("Your relationships will prosper");
