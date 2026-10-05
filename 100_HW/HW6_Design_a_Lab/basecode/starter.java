@@ -8,6 +8,10 @@ import java.util.*;
 
 public class starter {
     public static void main(String[] args) {
+        import java.util.*;
+
+public class starter {
+    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int random=(int)(Math.random()*5+2);
         System.out.println("You are going to make a band");
@@ -48,5 +52,7 @@ public class starter {
          System.out.println("The song your band is playing is "+song+" (slowed+reverb+phonk+sped up)");
         }
         System.out.println("Thank you for coming to "+name+"s concert.");
+    }
+}
     }
 }
