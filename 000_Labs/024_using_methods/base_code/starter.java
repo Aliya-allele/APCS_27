@@ -13,7 +13,53 @@ class starter {
 	static ArrayList<String> arr = new ArrayList<String>();
 
 	public static void main(String args[]) throws InterruptedException {
-		// Write your code here!
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Welcome to Type Quest!");
+		System.out.println("It is currently "+getTime()+" and we are ready to play!");
+		System.out.println("Given a sentence, type it as fast as possible!");
+		System.out.println();
+		System.out.println("------------------------------------------------");
+		while(true){
+		System.out.println("Would you like to:");
+		System.out.println("1 - Play random");
+		System.out.println("2 - Play set");
+		System.out.println("3 - Quit");
+		String answer=sc.nextLine();
+		if(answer.equals("1")){
+			populateArrayList();
+			System.out.println("You've chosen to randomly select a sentence.");
+			System.out.println("---------------Your sentence is:-------------");
+			System.out.println(getSentence());
+			System.out.println("---------------------------------------------");
+			countdown();
+			startTimer();
+			String writing=sc.nextLine();
+			endTimer();
+			System.out.println("Nice job! Here is your result!");
+			System.out.println("Time: "+endTimer());
+			System.out.println("Errors: "+compareSentences(getSentence(),writing)+"/"+lettersInSentence(getSentence()));
+			System.out.println();
+
+		}else if(answer.equals("2")){
+			System.out.println("Please enter what sentence number you'd like to play:");
+			int practice=sc.nextInt();
+			sc.nextLine();
+			System.out.println("---------------Your sentence is:-------------");
+			System.out.println(getSentence(practice));
+			System.out.println("---------------------------------------------");
+			countdown();
+			startTimer();
+			String writing2=sc.nextLine();
+			endTimer();
+			System.out.println("Nice job! Here is your result!");
+			System.out.println("Time: "+endTimer());
+			System.out.println("Errors: "+compareSentences(getSentence(),writing2)+"/"+lettersInSentence(getSentence()));
+			System.out.println();
+
+		}else if(answer.equals("3")){
+			break;
+		}
+		}
 
 		
 	}
