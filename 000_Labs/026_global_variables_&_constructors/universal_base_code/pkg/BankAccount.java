@@ -16,26 +16,42 @@ public class BankAccount {
 
 
 	// -------CONSTRUCTORS-------
-	public bankAccount(){
+	public BankAccount(){
 		accountNumber=0;
 		balance=0.0;
-		BankName="Unknown";
+		bankName="Unknown";
 		accountOwner="Unknown";
 	}
-	public bankAccount(String eins, String zwei){
+	public BankAccount(String eins, String zwei){
 		accountNumber=0;
 		balance=0.0;
-		BankName=eins;
+		bankName=eins;
 		accountOwner=zwei;
 	}
-	public bankAccount(int number,double decimal,String eins, String zwei){
+	public BankAccount(int number,double decimal,String eins, String zwei){
 		accountNumber=number;
 		balance=decimal;
-		BankName=eins;
+		bankName=eins;
 		accountOwner=zwei;
 	}
-	
 
 	// -------METHODS-------
+	public void setBalance(double decimal){
+		balance=decimal;
+		return;
+	}
+	public double getBalance(){
+		return balance;
+	}
+	public void printDetails(){
+		System.out.println("------------------------");
+		System.out.println("Account Number: "+accountNumber);
+		System.out.println("Balance: $"+balance);
+		System.out.println("Bank Name: "+bankName);
+		System.out.println("Account Owner: "+accountOwner);
+		System.out.println("------------------------");
+		System.out.println();
+		return;
+	}
 
 }
