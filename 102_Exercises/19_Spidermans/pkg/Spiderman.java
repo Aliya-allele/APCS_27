@@ -43,6 +43,25 @@ public class Spiderman {
 	// ---------------------------------------
 	// Create accessor and mutator methods for actor, age, and villain (6 total methods)
 	// Ex: getAge and setAge
+	public String getActor(){
+		return actor;
+	}
+	public int getAge(){
+		return age;
+	}
+	public String getVillan(){
+		return villan;
+	}
+	public void setActor(String name){
+		actor=name;
+	}
+	public void setAge(int num){
+		age=num;
+
+	}
+	public void setVillan(String name2){
+		villan=name2;
+	}
 	
 
 
