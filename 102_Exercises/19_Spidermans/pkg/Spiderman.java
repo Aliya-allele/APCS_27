@@ -11,27 +11,27 @@ public class Spiderman {
 	public Spiderman(){
 		String actor="unknown";
 		int age=0;
-		String villan="unknown";
+		String villain="unknown";
 	}
 	public Spiderman(String acting){
 		actor=acting;
 		age=0;
-		villan="unknown";
+		villain="unknown";
 	}
 	public Spiderman(int aging){
 		actor="unknown";
 		age=aging;
-		villan="unknown";
+		villain="unknown";
 	}
 	public Spiderman(String acting,int aging){
 		actor=acting;
 		age=aging;
-		villan="unknown"
+		villain="unknown";
 	}
-	public Spiderman(String acting, int aging, int fighting){
+	public Spiderman(String acting, int aging, String fighting){
 		actor=acting;
 		age=aging;
-		villan=fighting;
+		villain=fighting;
 	}
 	// Create constructors for each combination of actor/age/villain. Use the defaults above if not an input parameter.
 	// Default constructor! 				Actor - Unknown, Age - 0, Villain - Unknown
@@ -49,8 +49,8 @@ public class Spiderman {
 	public int getAge(){
 		return age;
 	}
-	public String getVillan(){
-		return villan;
+	public String getVillain(){
+		return villain;
 	}
 	public void setActor(String name){
 		actor=name;
@@ -59,8 +59,11 @@ public class Spiderman {
 		age=num;
 
 	}
-	public void setVillan(String name2){
-		villan=name2;
+	public void setVillain(String name2){
+		villain=name2;
+	}
+	public void SpidermanToString(){
+		System.out.println("Spidermans name is "+actor+", they are "+age+" years old, and they are fighting against "+villain+".");
 	}
 	
 

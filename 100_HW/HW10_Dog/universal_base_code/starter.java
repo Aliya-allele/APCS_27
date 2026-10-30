@@ -11,10 +11,13 @@ import java.util.Random;
 
 class starter {
 	public static void main(String args[]) {
-		// Your code goes below here
-		BaseClass test = new BaseClass();
-
-
+		Dog test = new Dog();
+		test.setName("Juno");
+		test.setAge(25);
+		test.dogToString();
+		System.out.println("Tori is a Chihuahua that is 1 year old.");
+		test.isSleeping();
+		test.bark();
 
 	}
 }
